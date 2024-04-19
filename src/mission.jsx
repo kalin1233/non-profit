@@ -13,16 +13,24 @@ const Boldheader = styled.h1`
 
 const ParagraphContainer = styled.div`
     width: 80%;
-    margin: 50vh auto 0;
+    margin: 20vh auto;
+    padding-lef: 20px;
     text-align: left
 `;
-    
+
+const StyledFooter = styled.footer`
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  `;
+
+
 function Mission() {
     return (
         <div>
         <Boldheader> 
             <WindupChildren>
-                <pace ms=100>{"Mission Statement"} </pace>
+                <pace ms={100}>{"Mission Statement"} </pace>
             </WindupChildren> 
         </Boldheader>
         <ParagraphContainer>
@@ -35,7 +43,10 @@ function Mission() {
             We understand community involvment to be an important element in affecting meaningful change. That is why we invite everyone to join us in our cause. Together we can create a community where every young person has the opportunity to fulfill their potential and contribute positively to society.
             Join us in empowering our youth, transforming lives, and building a stronger, more vibrant community for all.
         </p>
-        </ParagrapghContainer>
+        </ParagraphContainer>
+        <StyledFooter>
+        <p> Group 2. All rights reserved.</p>
+        </StyledFooter>
         </div>
         );
 }
