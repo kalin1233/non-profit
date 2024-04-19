@@ -10,6 +10,7 @@ function Mission() {
             We understand community involvment to be an important element in affecting meaningful change. That is why we invite everyone to join us in our cause. Together we can create a community where every young person has the opportunity to fulfill their potential and contribute positively to society.
             Join us in empowering our youth, transforming lives, and building a stronger, more vibrant community for all.
         </p>
+        </div>
         ;
 }
 
