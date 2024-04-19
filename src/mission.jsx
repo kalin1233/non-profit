@@ -1,6 +1,31 @@
+import React from 'react';
+import styled from 'styled-components';
+import { WindupChildren, Pace} from "windups";
+
+const Boldheader = styled.h1`
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    color:black;
+    width: 100%;
+    margin-top:50px;
+    `;
+
+const ParagraphContainer = styled.div`
+    width: 80%;
+    margin: 50vh auto 0;
+    text-align: left
+`;
+    
 function Mission() {
-    return <h1>Mission Statement Page</h1>
+    return (
         <div>
+        <Boldheader> 
+            <WindupChildren>
+                <pace ms=100>{"Mission Statement"} </pace>
+            </WindupChildren> 
+        </Boldheader>
+        <ParagraphContainer>
         <p>
             Empowering the Next Generation: Transforming Lives in Our Low-Income Community
         </p>
@@ -10,8 +35,9 @@ function Mission() {
             We understand community involvment to be an important element in affecting meaningful change. That is why we invite everyone to join us in our cause. Together we can create a community where every young person has the opportunity to fulfill their potential and contribute positively to society.
             Join us in empowering our youth, transforming lives, and building a stronger, more vibrant community for all.
         </p>
+        </ParagrapghContainer>
         </div>
-        ;
+        );
 }
 
 export default Mission;
