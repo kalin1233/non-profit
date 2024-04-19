@@ -1,35 +1,60 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import styled from 'styled-components';
+import Home from './home.jsx';
+import Mission from './mission.jsx';
+import Resource from './resource.jsx';
+import About from './about.jsx';
+import Education from './education.jsx';
 
-function App() {
-  const [count, setCount] = useState(0)
+const NavbarContainer = styled.nav`
+    background-color: beige;
+`;
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+const NavList = styled.ul`
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+`;
+
+const NavItem = styled.li`
+    margin-right: 20px;
+`;
+
+const NavLink = styled(Link)`
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+`;
+function Navbar() {
+    return (
+        <NavbarContainer>
+            <NavList>
+                <NavItem><NavLink to="/">Home</NavLink></NavItem>
+                <NavItem><NavLink to="/mission">Mission</NavLink></NavItem>
+                <NavItem><NavLink to="/resource">Resource</NavLink></NavItem>
+                <NavItem><NavLink to="/education">Education</NavLink></NavItem>
+                <NavItem><NavLink to="/about">About</NavLink></NavItem>
+            </NavList>
+        </NavbarContainer>
+    );
 }
 
-export default App
+function App() {
+    return (
+        <Router>
+            <div>
+                <Navbar />
+                <Routes>
+                    <Route path="/" exact element={<Home />} />
+                    <Route path="/mission" element={<Mission />} />
+                    <Route path="/resource" element={<Resource />} />
+                    <Route path="/education" element={<Education />} />
+                    <Route path="/about" element={<About />} />
+                </Routes>
+            </div>
+        </Router>
+    );
+}
+
+export default App;
