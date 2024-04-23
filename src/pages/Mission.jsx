@@ -1,6 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import missionphoto from '../assets/mission.jpeg';
 import { WindupChildren, Pace} from "windups";
+
+const StyledImg = styled.img`
+    width: 90%;
+    max-height: 10%;
+`; 
 
 const Boldheader = styled.h1`
     font-weight: bold;
@@ -28,6 +34,7 @@ const StyledFooter = styled.footer`
 function Mission() {
     return (
         <div>
+            <StyledImg src={missionphoto} alt="Mission"/>
             <Boldheader>
                 <WindupChildren>
                     <pace ms={100}>{"Mission Statement"} </pace>
