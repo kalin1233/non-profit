@@ -8,6 +8,8 @@ function About() {
                 <li>🤷‍♂️ Kalin Toussaint - CO 2024</li>
                 <li>🤖 Aarsh Mehta - CO 2025</li>
                 <li>🫡 Thang Tong - CO 2025</li>
+                <li>😴 Favor Wariboko - CO 2024</li>
+
             </ul>
         </div>
     );
