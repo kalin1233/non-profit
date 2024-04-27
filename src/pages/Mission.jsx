@@ -14,8 +14,6 @@ const PageContainer = styled.div`
 const StyledImg = styled.img`
     width: 100%;
     height: 37.5vh;
-    display: block;
-    margin-top: 20px;
 `; 
 
 const BoldHeader = styled.h1`
