@@ -2,18 +2,27 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const NavbarContainer = styled.nav`
+    width: 100vw;
+    align-items: center;
     background-color: beige;
 `;
 
 const NavList = styled.ul`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
 `;
 
 const NavItem = styled.li`
-    margin-right: 20px;
+    padding: .7rem 1rem;
+    text-align: center;
+    &:hover {
+        background-color: aqua;
+    }
 `;
 
 const NavLink = styled(Link)`
