@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
-// Make sure your theme and GlobalStylesProvider are properly imported
 import GlobalStylesProvider from '../components/GlobalStyles';
 
 const About = () => {
