@@ -18,7 +18,7 @@ const StyledImg = styled.img`
     margin-top: 20px;
 `; 
 
-const Boldheader = styled.h1`
+const BoldHeader = styled.h1`
     font-weight: bold;
     text-align: center;
     font-size: 24px;
@@ -30,11 +30,11 @@ const Boldheader = styled.h1`
 const ParagraphContainer = styled.div`
     width: 80%;
     margin: 0 auto 20vh;
-    padding-lef: 20px;
+    padding-left: 20px;
     text-align: left
 `;
 
-const Boldparagraph = styled.p`
+const BoldParagraph = styled.p`
     font-weight: bold;
 `;
 
@@ -49,13 +49,13 @@ const StyledFooter = styled.footer`
 
 function Mission() {
     return (
-        <div>
+        <PageContainer>
             <StyledImg src={missionphoto} alt="Mission"/>
-            <Boldheader>
+            <BoldHeader>
                 <WindupChildren>
                     <pace ms={100}>{"Mission Statement"} </pace>
                 </WindupChildren>
-            </Boldheader>
+            </BoldHeader>
             <ParagraphContainer>
                 <BoldParagraph>
                     Empowering the Next Generation: Transforming Lives in Our Low-Income Community
@@ -70,7 +70,7 @@ function Mission() {
             <StyledFooter>
                 <p> Group 2. All rights reserved.</p>
             </StyledFooter>
-        </div>
+        </PageContainer>
     );
 }
 
