@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import missionphoto from '../assets/mission.jpeg';
 import { WindupChildren, Pace} from "windups";
