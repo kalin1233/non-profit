@@ -1,6 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {ThemeProvider} from 'styled-components';
 import { Link } from "react-router-dom";
+import {theme} from "../components/Theme.jsx";
+import { WindupChildren, Pace} from "windups";
+
 
 // Styled components
 const HomePageContainer = styled.div`
@@ -12,13 +15,18 @@ const HomePageContainer = styled.div`
 `;
 
 const SectionTitle = styled.h2`
-    font-size: 24px;
+    font-size: ${({ theme }) => theme.fontSizes.large};
+    color: ${({ theme }) => theme.colors.text};
     margin-bottom: 10px;
 `;
 
 const IntroductionText = styled.p`
     text-align: center;
-    margin-bottom: 30px;
+    font-size: ${({theme}) => theme.fontSizes.medium};
+    color: ${({theme}) => theme.colors.text};
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
 `;
 
 const FounderContainer = styled.div`
@@ -75,22 +83,25 @@ const QuickLinkItem = styled.li`
 
 const HomePage = () => {
     return (
+        <ThemeProvider theme={theme}>
         <HomePageContainer>
-            <SectionTitle>Welcome to our Non-Profit Organization Website</SectionTitle>
+            <WindupChildren>
+                <pace ms={100}>{"Welcome to our Non-Profit Organization Website"} </pace>
+            </WindupChildren>
             <IntroductionText>
-                This website is the vision of Kalin Toussaint and Lebanos Mengistu, two individuals who grew up in Somerville Mystic Projects, respectively. Recognizing the challenges facing the youth in our communities, we decided to leverage our network and resources to make a difference. Together, we aim to provide innovative solutions and better opportunities for the young people in our neighborhoods.
+            This website is the vision of Kalin Toussaint and Lebanos Mengistu, two individuals who grew up in Somerville Mystic Projects, respectively. Recognizing the challenges facing the youth in our communities, we decided to leverage our network and resources to make a difference. Together, we aim to provide innovative solutions and better opportunities for the young people in our neighborhoods.
             </IntroductionText>
 
             {/* Founders Section */}
             <SectionTitle>Meet Our Founders</SectionTitle>
             <FounderContainer>
                 <FounderCard>
-                    <FounderImage src="founder1.jpg" alt="Founder 1" />
+                    <FounderImage src="../assets/leb.jpeg" alt="Founder 1" />
                     <FounderName>Lebanos Mengistu</FounderName>
                     <FounderRole>Co-Founder & CEO</FounderRole>
                 </FounderCard>
                 <FounderCard>
-                    <FounderImage src="founder2.jpg" alt="Founder 2" />
+                    <FounderImage src="../assets/k.jpeg" alt="Founder 2" />
                     <FounderName>Kalin Toussaint</FounderName>
                     <FounderRole>Co-Founder & CEO</FounderRole>
                 </FounderCard>
@@ -116,6 +127,7 @@ const HomePage = () => {
                 </ContactLink>
             </ContactLinksContainer>
         </HomePageContainer>
+        </ThemeProvider>
     );
 };
 
