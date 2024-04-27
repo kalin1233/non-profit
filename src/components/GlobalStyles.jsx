@@ -19,6 +19,16 @@ const GlobalStyles = createGlobalStyle`
         font-weight: bold; 
         color: black; 
     }
+
+    footer {
+        width: 100%;
+        padding: 20px;
+        background-color: #d9c4a9; 
+        color: ${({ theme }) => theme.colors.footerText};
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+    }
 `;
 
 
