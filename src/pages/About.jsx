@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import GlobalStylesProvider from '../components/GlobalStyles';
+import { WindupChildren, Pace} from "windups";
 
 const About = () => {
     const [isFlipped, setIsFlipped] = useState(new Array(5).fill(false));
@@ -24,8 +25,15 @@ const About = () => {
     return (
         <GlobalStylesProvider>
             <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center', paddingBottom: '100px' }}>
-                <h1 style={{ fontSize: '5rem', margin: '1rem' }}>About Us</h1>
-                <div style={{ display: 'grid', gridTemplateColumns, gap: '20px', justifyContent: 'center', alignItems: 'center' }}>
+                <WindupChildren>
+                    <pace ms={100}>
+                    <h1 style={{fontSize: '5rem', margin: '1rem'}}>About Us</h1>
+                    </pace>
+                </WindupChildren>
+                <div style={{
+                    display: 'grid',
+                    gridTemplateColumns,
+                    gap: '20px', justifyContent: 'center', alignItems: 'center' }}>
                     {teamMembers.map((member, index) => (
                         <ReactCardFlip isFlipped={isFlipped[index]} flipDirection="horizontal" key={index}>
                             <div
