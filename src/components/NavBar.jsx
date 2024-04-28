@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, {ThemeProvider} from 'styled-components';
+import {theme} from "../components/Theme.jsx";
 
 const NavbarContainer = styled.nav`
     width: 100vw;
@@ -27,21 +28,23 @@ const NavItem = styled.li`
 
 const NavLink = styled(Link)`
     text-decoration: none;
-    font-size: 20px;
+    font-size: ${({ theme }) => theme.fontSizes.medium};
     color: black;
 `;
 
 function Navbar() {
     return (
-        <NavbarContainer>
-            <NavList>
-                <NavItem><NavLink to="/">Home</NavLink></NavItem>
-                <NavItem><NavLink to="/Mission">Mission</NavLink></NavItem>
-                <NavItem><NavLink to="/Resource">Resource</NavLink></NavItem>
-                <NavItem><NavLink to="/Education">Education</NavLink></NavItem>
-                <NavItem><NavLink to="/About">About</NavLink></NavItem>
-            </NavList>
-        </NavbarContainer>
+        <ThemeProvider theme={theme}>
+            <NavbarContainer>
+                <NavList>
+                    <NavItem><NavLink to="/">Home</NavLink></NavItem>
+                    <NavItem><NavLink to="/Mission">Mission</NavLink></NavItem>
+                    <NavItem><NavLink to="/Resource">Resource</NavLink></NavItem>
+                    <NavItem><NavLink to="/Education">Education</NavLink></NavItem>
+                    <NavItem><NavLink to="/About">About</NavLink></NavItem>
+                </NavList>
+            </NavbarContainer>
+        </ThemeProvider>
     );
 }
 
