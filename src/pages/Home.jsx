@@ -6,8 +6,7 @@ import lebImage from "../assets/leb.jpeg";
 import kImage from "../assets/k.jpeg";
 import { WindupChildren, Pace} from "windups";
 
-
-// Styled components
+//Home page created by Kalin
 const HomePageContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -87,6 +86,7 @@ const HomePage = () => {
         <ThemeProvider theme={theme}>
             <HomePageContainer>
                 <SectionTitle>
+                    {/* Used the extra credit from Ashley's group "Windups" */}
                 <WindupChildren>
                     <pace ms={100}>{"MIO NON-PROFIT ORGANIZATION"} </pace>
                 </WindupChildren>
@@ -136,6 +136,7 @@ const HomePage = () => {
                     </ContactLink>
                 </ContactLinksContainer>
             </HomePageContainer>
+            {/* Global footer */}
             <footer>
                 © {new Date().getFullYear()} Non-Profit. All rights reserved.
             </footer>

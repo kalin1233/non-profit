@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import styled, {ThemeProvider} from 'styled-components';
-import {theme} from "../components/Theme.jsx";
+import {theme} from "./Theme.jsx";
 
+//Navbar created by Kalin and Thang
 const NavbarContainer = styled.nav`
     width: 100vw;
     align-items: center;

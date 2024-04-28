@@ -2,7 +2,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 import {theme} from "./Theme.jsx";
 
-
+//Global styling creating by Kalin and Thang
 const GlobalStyles = createGlobalStyle`
     body {
         font-family: ${({ theme }) => theme.fonts.primary}; 

@@ -1,3 +1,4 @@
+// Themes created by Kalin
 export const theme = {
     colors: {
         background: '#ECE2D0',
