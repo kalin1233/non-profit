@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import GlobalStylesProvider from '../components/GlobalStyles';
 import { WindupChildren, Pace} from "windups";

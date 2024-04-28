@@ -2,6 +2,8 @@ import React from 'react';
 import styled, {ThemeProvider} from 'styled-components';
 import { Link } from "react-router-dom";
 import {theme} from "../components/Theme.jsx";
+import lebImage from "../assets/leb.jpeg";
+import kImage from "../assets/k.jpeg";
 import { WindupChildren, Pace} from "windups";
 
 
@@ -84,49 +86,58 @@ const QuickLinkItem = styled.li`
 const HomePage = () => {
     return (
         <ThemeProvider theme={theme}>
-        <HomePageContainer>
-            <WindupChildren>
-                <pace ms={100}>{"Welcome to our Non-Profit Organization Website"} </pace>
-            </WindupChildren>
-            <IntroductionText>
-            This website is the vision of Kalin Toussaint and Lebanos Mengistu, two individuals who grew up in Somerville Mystic Projects, respectively. Recognizing the challenges facing the youth in our communities, we decided to leverage our network and resources to make a difference. Together, we aim to provide innovative solutions and better opportunities for the young people in our neighborhoods.
-            </IntroductionText>
+            <HomePageContainer>
+                <WindupChildren>
+                    <pace ms={100}>{"Welcome to our Non-Profit Organization Website"} </pace>
+                </WindupChildren>
+                <IntroductionText>
+                    This website is the vision of Kalin Toussaint and Lebanos Mengistu, two individuals who grew up in
+                    Somerville Mystic Projects, respectively. Recognizing the challenges facing the youth in our
+                    communities, we decided to leverage our network and resources to make a difference. Together, we aim
+                    to provide innovative solutions and better opportunities for the young people in our neighborhoods.
+                </IntroductionText>
 
-            {/* Founders Section */}
-            <SectionTitle>Meet Our Founders</SectionTitle>
-            <FounderContainer>
-                <FounderCard>
-                    <FounderImage src="../assets/leb.jpeg" alt="Founder 1" />
-                    <FounderName>Lebanos Mengistu</FounderName>
-                    <FounderRole>Co-Founder & CEO</FounderRole>
-                </FounderCard>
-                <FounderCard>
-                    <FounderImage src="../assets/k.jpeg" alt="Founder 2" />
-                    <FounderName>Kalin Toussaint</FounderName>
-                    <FounderRole>Co-Founder & CEO</FounderRole>
-                </FounderCard>
-            </FounderContainer>
+                {/* Founders Section */}
+                <SectionTitle>Meet Our Founders</SectionTitle>
+                <FounderContainer>
+                    <FounderCard>
+                        <FounderImage src="kImage" alt="Founder 1"/>
+                        <FounderName>Lebanos Mengistu</FounderName>
+                        <FounderRole>Co-Founder & CEO</FounderRole>
+                    </FounderCard>
+                    <FounderCard>
+                        <FounderImage src="lebImage" alt="Founder 2"/>
+                        <FounderName>Kalin Toussaint</FounderName>
+                        <FounderRole>Co-Founder & CEO</FounderRole>
+                    </FounderCard>
+                </FounderContainer>
 
-            {/* Quick Links */}
-            <SectionTitle>Quick Links</SectionTitle>
-            <QuickLinks>
-                <QuickLinkItem><Link to="/Education">Learn More about Our Education Initiatives</Link></QuickLinkItem>
-                <QuickLinkItem><Link to="/Mission">Understand our Mission</Link></QuickLinkItem>
-                <QuickLinkItem><Link to="/Resources">Explore Our Resources</Link></QuickLinkItem>
-                <QuickLinkItem><Link to="/About">Meet Our Development Team</Link></QuickLinkItem>
-            </QuickLinks>
+                {/* Quick Links */}
+                <SectionTitle>Quick Links</SectionTitle>
+                <QuickLinks>
+                    <QuickLinkItem><Link to="/Education">Learn More about Our Education
+                        Initiatives</Link></QuickLinkItem>
+                    <QuickLinkItem><Link to="/Mission">Understand our Mission</Link></QuickLinkItem>
+                    <QuickLinkItem><Link to="/Resources">Explore Our Resources</Link></QuickLinkItem>
+                    <QuickLinkItem><Link to="/About">Meet Our Development Team</Link></QuickLinkItem>
+                </QuickLinks>
 
-            {/* Contact Us Links */}
-            <ContactLinksContainer>
-                <SectionTitle>Contact Us</SectionTitle>
-                <ContactLink href="https://www.linkedin.com/in/linkedin-profile-1" target="_blank" rel="noopener noreferrer">
-                    Contact Lebanos Mengistu on LinkedIn
-                </ContactLink>
-                <ContactLink href="https://www.linkedin.com/in/linkedin-profile-2" target="_blank" rel="noopener noreferrer">
-                    Contact Kalin Toussaint on LinkedIn
-                </ContactLink>
-            </ContactLinksContainer>
-        </HomePageContainer>
+                {/* Contact Us Links */}
+                <ContactLinksContainer>
+                    <SectionTitle>Contact Us</SectionTitle>
+                    <ContactLink href="https://www.linkedin.com/in/linkedin-profile-1" target="_blank"
+                                 rel="noopener noreferrer">
+                        Contact Lebanos Mengistu on LinkedIn
+                    </ContactLink>
+                    <ContactLink href="https://www.linkedin.com/in/linkedin-profile-2" target="_blank"
+                                 rel="noopener noreferrer">
+                        Contact Kalin Toussaint on LinkedIn
+                    </ContactLink>
+                </ContactLinksContainer>
+            </HomePageContainer>
+            <footer>
+                © {new Date().getFullYear()} Non-Profit. All rights reserved.
+            </footer>
         </ThemeProvider>
     );
 };
