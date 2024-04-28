@@ -1,7 +1,10 @@
-import styled from 'styled-components';
+import styled, {ThemeProvider} from 'styled-components';
+import GlobalStylesProvider from '../components/GlobalStyles';
+import {theme} from "../components/Theme.jsx";
+import { WindupChildren, Pace} from "windups";
 
 const PageTitle = styled.h2`
-    font-size: 24px;
+    font-size: ${({ theme }) => theme.fontSizes.PageTitle};
     margin-bottom: 10px;
 `
 const PageContainer = styled.div`
@@ -20,13 +23,13 @@ const ContentContainer = styled.div`
 
 const StyledUl = styled.ul`
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${({ theme }) => theme.fontSizes.large};;
     margin-bottom: 10px;
 `
 
 const StyledLi = styled.li`
     font-weight: normal;
-    font-size: 16px;
+    font-size: ${({ theme }) => theme.fontSizes.medium};;
     margin-bottom: 10px;
 `
 
