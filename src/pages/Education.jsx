@@ -1,5 +1,6 @@
 import educationPic from '../assets/education.png';
-import styled from 'styled-components';
+import styled, {ThemeProvider} from 'styled-components';
+import {theme} from "../components/Theme.jsx";
 
 const StyledImg = styled.img`
     width: 100%;
@@ -19,14 +20,13 @@ const OverlayDiv = styled.div`
 const StyledHeader = styled.h1`
     position: absolute;
     color: white;
-    font-weight: bold;
+    font-size: ${({ theme }) => theme.fontSizes.pageTitle};
     top: 0;
-    font-size: 70px;
 `;
 
 const StyledP = styled.p`
     position: absolute;
-    font-size: 30px;
+    font-size: ${({theme}) => theme.fontSizes.medium};
     color: white;
     top: 150px;
     width: 80%;
@@ -40,8 +40,8 @@ cursor: pointer;
 
 export default function Education() {
     return (
+        <ThemeProvider theme={theme}>
         <div>
-            
              <StyledImg src={educationPic} alt="Education"/>
              <OverlayDiv/>
              <StyledHeader>Education</StyledHeader>
@@ -51,7 +51,8 @@ We understand the challenges faced by families, which is why our services are fr
 While the <Styleda href="https://mysticlearningcenter.org/about-us" target="_blank" rel="noopener noreferrer" >Mystic Learning Center</Styleda> is a vital resource, we aim to expand opportunities for growth. Join us in empowering youth and building a stronger community through education.
 </StyledP>       
         </div>
-       
+        </ThemeProvider>
+
     );
 }
 

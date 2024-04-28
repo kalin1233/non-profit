@@ -1,5 +1,6 @@
-import styled from 'styled-components';
+import styled, {ThemeProvider}  from 'styled-components';
 import missionphoto from '../assets/mission.jpeg';
+import {theme} from "../components/Theme.jsx";
 import { WindupChildren, Pace} from "windups";
 
 
@@ -16,10 +17,8 @@ const StyledImg = styled.img`
 `; 
 
 const BoldHeader = styled.h1`
-    font-weight: bold;
     text-align: center;
-    font-size: 24px;
-    width: 100%;
+    font-size: ${({ theme }) => theme.fontSizes.pageTitle};
     margin-top:50px;
     margin-bottom: 0;
 `;
@@ -46,6 +45,7 @@ const StyledFooter = styled.footer`
 
 function Mission() {
     return (
+        <ThemeProvider theme={theme}>
         <PageContainer>
             <StyledImg src={missionphoto} alt="Mission"/>
             <BoldHeader>
@@ -68,6 +68,7 @@ function Mission() {
                 <p> Group 2. All rights reserved.</p>
             </StyledFooter>
         </PageContainer>
+        </ThemeProvider>
     );
 }
 

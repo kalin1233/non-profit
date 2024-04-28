@@ -17,8 +17,7 @@ const HomePageContainer = styled.div`
 `;
 
 const SectionTitle = styled.h2`
-    font-size: ${({ theme }) => theme.fontSizes.large};
-    color: ${({ theme }) => theme.colors.text};
+    font-size: ${({ theme }) => theme.fontSizes.pageTitle};
     margin-bottom: 10px;
 `;
 
@@ -87,9 +86,11 @@ const HomePage = () => {
     return (
         <ThemeProvider theme={theme}>
             <HomePageContainer>
+                <SectionTitle>
                 <WindupChildren>
-                    <pace ms={100}>{"Welcome to our Non-Profit Organization Website"} </pace>
+                    <pace ms={100}>{"MIO NON-PROFIT ORGANIZATION"} </pace>
                 </WindupChildren>
+                </SectionTitle>
                 <IntroductionText>
                     This website is the vision of Kalin Toussaint and Lebanos Mengistu, two individuals who grew up in
                     Somerville Mystic Projects, respectively. Recognizing the challenges facing the youth in our
@@ -101,12 +102,12 @@ const HomePage = () => {
                 <SectionTitle>Meet Our Founders</SectionTitle>
                 <FounderContainer>
                     <FounderCard>
-                        <FounderImage src="kImage" alt="Founder 1"/>
+                        <FounderImage src={lebImage} alt="Founder 1"/>
                         <FounderName>Lebanos Mengistu</FounderName>
                         <FounderRole>Co-Founder & CEO</FounderRole>
                     </FounderCard>
                     <FounderCard>
-                        <FounderImage src="lebImage" alt="Founder 2"/>
+                        <FounderImage src={kImage} alt="Founder 2"/>
                         <FounderName>Kalin Toussaint</FounderName>
                         <FounderRole>Co-Founder & CEO</FounderRole>
                     </FounderCard>
