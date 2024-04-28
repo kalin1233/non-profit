@@ -7,9 +7,9 @@ export const theme = {
         heading: 'Roboto, sans-serif',
     },
     fontSizes: {
-        small: '14rem',
-        medium: '16rem',
-        large: '24rem',
-        pageTitle: '36rem',
+        small: '0.5rem',
+        medium: '1rem',
+        large: '2rem',
+        pageTitle: '5rem',
     },
 };
