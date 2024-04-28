@@ -6,15 +6,14 @@ import React from "react";
 
 
 const PageContainer = styled.div`
-    background-color: black;
-    color: white;
-    min-height: 100vh;
-    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     `;
 
 const StyledImg = styled.img`
-    width: 100%;
-    height: 37.5vh;
+    width: 626px;
+    height: 417px;
 `; 
 
 const BoldHeader = styled.h1`
