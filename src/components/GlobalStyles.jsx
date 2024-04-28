@@ -19,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
         font-weight: bold; 
         color: black; 
     }
-
+    //simple footer added by Aarsh
     footer {
         width: 100%;
         padding: 20px;
