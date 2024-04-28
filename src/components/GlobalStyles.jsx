@@ -26,8 +26,8 @@ const GlobalStyles = createGlobalStyle`
         background-color: #d9c4a9; 
         color: ${({ theme }) => theme.colors.footerText};
         text-align: center;
-        position: absolute;
         bottom: 0;
+        position: relative;
     }
 `;
 
