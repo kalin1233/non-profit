@@ -5,6 +5,7 @@ import { WindupChildren, Pace} from "windups";
 import React from "react";
 
 
+{/*Mission Page created by Ashley Anyanwu*/}
 const PageContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -19,8 +20,7 @@ const StyledImg = styled.img`
 const BoldHeader = styled.h1`
     text-align: center;
     font-size: ${({ theme }) => theme.fontSizes.pageTitle};
-    margin-top:50px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 `;
 
 const ParagraphContainer = styled.div`
@@ -39,12 +39,13 @@ function Mission() {
     return (
         <ThemeProvider theme={theme}>
             <PageContainer>
-                <StyledImg src={missionphoto} alt="Mission"/>
                 <BoldHeader>
                     <WindupChildren>
                         <pace ms={100}>{"Mission Statement"} </pace>
                     </WindupChildren>
                 </BoldHeader>
+                {/*Photo provided by stockimages*/}
+                <StyledImg src={missionphoto} alt="Mission"/>
                 <ParagraphContainer>
                     <BoldParagraph>
                         Empowering the Next Generation: Transforming Lives in Our Low-Income Community
