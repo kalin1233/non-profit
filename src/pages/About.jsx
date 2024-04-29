@@ -16,7 +16,6 @@ const About = () => {
         setIsFlipped(updatedFlipped);
     };
 
-    // Array of team members with their details
     const teamMembers = [
         { emoji: '💙', name: 'Ashley Anyanwu', co: 'CO 2025' },
         { emoji: '🤷‍♂️', name: 'Kalin Toussaint', co: 'CO 2024' },

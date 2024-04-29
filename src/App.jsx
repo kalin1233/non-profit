@@ -9,6 +9,8 @@ import Navbar from "./components/NavBar.jsx";
 
 
 //Created by Kalin
+
+//Creating our path for each page
 function App() {
     return (
         <Router>

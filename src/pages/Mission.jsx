@@ -37,7 +37,7 @@ const BoldParagraph = styled.p`
 
 function Mission() {
     return (
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={theme}> {/*Using custom and global styled components so that we can keep pages consistent. Also added my own extra credit component "Windups"*/}
             <PageContainer>
                 <BoldHeader>
                     <WindupChildren>

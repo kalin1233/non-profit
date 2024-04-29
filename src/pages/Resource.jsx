@@ -38,6 +38,7 @@ const StyledImg = styled.img`
 
 
 function Resource() {
+    {/* Using custom and global styled components to keep pages consistent, but I added my own styling preferences.*/}
     return (
         <ThemeProvider theme={theme}>
             <PageContainer>

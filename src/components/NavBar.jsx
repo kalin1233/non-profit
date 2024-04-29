@@ -3,6 +3,8 @@ import styled, {ThemeProvider} from 'styled-components';
 import {theme} from "./Theme.jsx";
 
 //Navbar created by Kalin and styled by Thang
+
+//Styling out Navbar
 const NavbarContainer = styled.nav`
     width: 100vw;
     align-items: center;
@@ -32,7 +34,7 @@ const NavLink = styled(Link)`
     font-size: ${({ theme }) => theme.fontSizes.medium};
     color: black;
 `;
-
+//Linking the Navbar to every page
 function Navbar() {
     return (
         <ThemeProvider theme={theme}>

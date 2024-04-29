@@ -38,7 +38,7 @@ const Styleda = styled.a`
 
 export default function Education() {
     return (
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={theme}>{/* Used custom and global styled components to create my page. */}
         <div>
         <StyledHeader>
             {/* Used the extra credit from Ashley's group "Windups" */}

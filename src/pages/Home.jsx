@@ -7,6 +7,8 @@ import kImage from "../assets/k.jpeg";
 import { WindupChildren, Pace} from "windups";
 
 //Home page created and styled by Kalin Toussaint
+
+//Styled components that use custom and global components
 const HomePageContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -98,7 +100,7 @@ const HomePage = () => {
                     to provide innovative solutions and better opportunities for the young people in our neighborhoods.
                 </IntroductionText>
 
-                {/* Founders Section */}
+                {/* Founders Section. Names and Images */}
                 <SectionTitle>Meet Our Founders</SectionTitle>
                 <FounderContainer>
                     <FounderCard>
@@ -113,7 +115,7 @@ const HomePage = () => {
                     </FounderCard>
                 </FounderContainer>
 
-                {/* Quick Links */}
+                {/* Quick Links to have another way for our users to navigate to different pages depending on their interests */}
                 <SectionTitle>Quick Links</SectionTitle>
                 <QuickLinks>
                     <QuickLinkItem><Link to="/Education">Learn More about Our Education
@@ -123,7 +125,7 @@ const HomePage = () => {
                     <QuickLinkItem><Link to="/About">Meet Our Development Team</Link></QuickLinkItem>
                 </QuickLinks>
 
-                {/* Contact Us Links */}
+                {/* Contact Us Links. This is just for reference. These links do not lead to anyone's page. This will be implemented later this year. */}
                 <ContactLinksContainer>
                     <SectionTitle>Contact Us</SectionTitle>
                     <ContactLink href="https://www.linkedin.com/in/linkedin-profile-1" target="_blank"
