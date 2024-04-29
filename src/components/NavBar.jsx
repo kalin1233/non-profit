@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styled, {ThemeProvider} from 'styled-components';
 import {theme} from "./Theme.jsx";
 
-//Navbar created by Kalin and Thang
+//Navbar created by Kalin and styled by Thang
 const NavbarContainer = styled.nav`
     width: 100vw;
     align-items: center;
@@ -40,7 +40,7 @@ function Navbar() {
                 <NavList>
                     <NavItem><NavLink to="/">Home</NavLink></NavItem>
                     <NavItem><NavLink to="/Mission">Mission</NavLink></NavItem>
-                    <NavItem><NavLink to="/Resource">Resource</NavLink></NavItem>
+                    <NavItem><NavLink to="/Resource">Resources</NavLink></NavItem>
                     <NavItem><NavLink to="/Education">Education</NavLink></NavItem>
                     <NavItem><NavLink to="/About">About</NavLink></NavItem>
                 </NavList>

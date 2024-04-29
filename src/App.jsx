@@ -6,7 +6,7 @@ import GlobalStylesProvider from './components/GlobalStyles.jsx';
 import About from './pages/About.jsx';
 import Education from './pages/Education.jsx';
 import Navbar from "./components/NavBar.jsx";
-import './DefaultStyling.css';
+
 
 //Created by Kalin
 function App() {

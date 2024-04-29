@@ -6,7 +6,7 @@ import lebImage from "../assets/leb.jpeg";
 import kImage from "../assets/k.jpeg";
 import { WindupChildren, Pace} from "windups";
 
-//Home page created by Kalin
+//Home page created and styled by Kalin Toussaint
 const HomePageContainer = styled.div`
     display: flex;
     flex-direction: column;

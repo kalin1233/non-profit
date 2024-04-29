@@ -1,4 +1,4 @@
-// Component made by Aarsh
+// Component made and styled by Aarsh
 import { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import GlobalStylesProvider from '../components/GlobalStyles';
@@ -33,7 +33,7 @@ const About = () => {
         <GlobalStylesProvider>
             {/* Container for the About section */}
             <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center', paddingBottom: '100px' }}>
-                {/* Animated text component */}
+                {/* Used the extra credit from Ashley's group "Windups" */}
                 <WindupChildren>
                     <Pace ms={100}>
                         <h1 style={{fontSize: '5rem', margin: '1rem'}}>About Us</h1>

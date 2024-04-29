@@ -3,6 +3,7 @@ import styled, {ThemeProvider} from 'styled-components';
 import {theme} from "../components/Theme.jsx";
 import { WindupChildren } from 'windups';
 
+{/*Education Page created and styled by Favor Wariboko*/}
 const StyledImg = styled.img`
     height: 417px;
     width: 626px;
@@ -40,6 +41,7 @@ export default function Education() {
         <ThemeProvider theme={theme}>
         <div>
         <StyledHeader>
+            {/* Used the extra credit from Ashley's group "Windups" */}
         <WindupChildren>
                         <pace ms={100}>{"Education"} </pace>
                     </WindupChildren>

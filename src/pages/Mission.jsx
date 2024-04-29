@@ -5,7 +5,7 @@ import { WindupChildren, Pace} from "windups";
 import React from "react";
 
 
-{/*Mission Page created by Ashley Anyanwu*/}
+{/*Mission Page created and styled by Ashley Anyanwu*/}
 const PageContainer = styled.div`
     display: flex;
     flex-direction: column;
