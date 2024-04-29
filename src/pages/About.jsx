@@ -44,6 +44,7 @@ const About = () => {
                     gridTemplateColumns,
                     gap: '20px', justifyContent: 'center', alignItems: 'center' }}>
                     {/* Mapping over team members to create flip cards */}
+                    {/*Used Flippy which was presented by Frederic Lemonnier and Stone Harris their extra credit assignment*/}
                     {teamMembers.map((member, index) => (
                         <ReactCardFlip isFlipped={isFlipped[index]} flipDirection="horizontal" key={index}>
                             {/* Front side of the card */}
