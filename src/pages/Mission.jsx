@@ -1,5 +1,5 @@
 import styled, {ThemeProvider}  from 'styled-components';
-import missionphoto from '../assets/mission.jpeg';
+import missionphoto from '../assets/mission2.jpeg';
 import {theme} from "../components/Theme.jsx";
 import { WindupChildren, Pace} from "windups";
 import React from "react";
